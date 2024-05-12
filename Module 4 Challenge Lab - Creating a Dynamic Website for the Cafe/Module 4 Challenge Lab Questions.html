@@ -1,0 +1,143 @@
+<html>
+  <body>
+    <!--top right bottom left-->
+    <div style="padding: 5px 40px 5px 20px;">
+
+      <h2 style="color:#194EC4;">AWS Academy Cloud Architecting - Module 4 Challenge Lab Questions</h2>
+
+      <!--NOTE to localization team: Copy this English questions.html file. Rename the copy as one of 'questions-es.html', 'questions-ja.html', 'questions-ko.html', 'questions-pt.html', or 'questions-zh.html'. Then, localize the questions and post the resulting file to the same aws-tc-largeobjects.s3-us-west-2.amazonaws.com/<sku>/<dir>/ location where you found the questions.html English version.-->
+
+      <!--Important: do not edit this line! The lambda function that processes this template will adjust it as needed.-->
+      <p>View questions in: <a href="questions.html">English</a>     </p>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 1: Is the instance in a public subnet?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="1">
+
+              <!--Example radio button question (multiple choice, single answer)-->
+              <!--Update the 'value' and the text between <label></label> tags-->
+              <!--To create more answer options, copy the first two lines below and increment the "id" and "for" values-->
+              <input type="radio" id="a1" name="answer" value="Yes">
+                  <label for="a1">Yes</label><br>
+              <input type="radio" id="a2" name="answer" value="No">
+                  <label for="a2">No</label><br>
+
+              <br>
+              <!--Keep the line below as is, however increment the # to match the question number-->
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 2: Does the EC2 instance have an IPv4 Public IP address assigned to it?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="2">
+
+              <input type="radio" id="b1" name="answer" value="Yes">
+                  <label for="b1">Yes</label><br>
+              <input type="radio" id="b2" name="answer" value="No">
+                  <label for="b2">No</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 3: What inbound TCP port numbers are open for this instance?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="3">
+
+              <input type="radio" id="c1" name="answer" value="A">
+                  <label for="c1">TCP port 80 only, open to the internet</label><br>
+              <input type="radio" id="c2" name="answer" value="B">
+                  <label for="c2">TCP port 22 only, open to the internet</label><br>
+              <input type="radio" id="c3" name="answer" value="C">
+                  <label for="c3">TCP port 80 only, open to a specific range of IP addresses</label><br>
+              <input type="radio" id="c4" name="answer" value="D">
+                  <label for="c4">TCP port 22 only, open to a specific range of IP addresses</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 4: Does the EC2 instance have an AWS Identity and Access Management (IAM) role associated with it?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="4">
+
+              <input type="radio" id="d1" name="answer" value="Yes">
+                  <label for="d1">Yes</label><br>
+              <input type="radio" id="d2" name="answer" value="No">
+                  <label for="d2">No</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 5: When you create an AMI from an instance, will the instance be rebooted?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="5">
+
+              <input type="radio" id="e1" name="answer" value="Yes">
+                  <label for="e1">Yes, always</label><br>
+              <input type="radio" id="e2" name="answer" value="No">
+                  <label for="e2">No, never</label><br>
+              <input type="radio" id="e3" name="answer" value="OptionalNot">
+                  <label for="e3">You have the option <i>not</i> to reboot, but by default it will be rebooted</label><br>
+              <input type="radio" id="e4" name="answer" value="OptionalDefaultYes">
+                  <label for="e4">You have the option to reboot, but by default it will  <i>not</i>  be rebooted</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 6: In what ways can you modify the root volume properties when you create an AMI from an instance?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="6">
+
+              <input type="radio" id="f1" name="answer" value="A">
+                  <label for="f1">You cannot change the root volume details.</label><br>
+              <input type="radio" id="f2" name="answer" value="B">
+                  <label for="f2">You can edit the size, but nothing else.</label><br>
+              <input type="radio" id="f3" name="answer" value="C">
+                  <label for="f3">You can edit the size and 'delete on termination' setting, but not the volume type.</label><br>
+              <input type="radio" id="f4" name="answer" value="D">
+                  <label for="f4">You can edit the size and volume type, but not the 'delete on termination' setting.</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 7: Can you add more volumes to an AMI that you create from an instance that only has one volume?</h3>
+          <form method="POST" action="https://g7ikfyyfj4.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="7">
+
+              <input type="radio" id="g1" name="answer" value="Yes">
+                  <label for="g1">Yes</label><br>
+              <input type="radio" id="g2" name="answer" value="No">
+                  <label for="g2">No</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+
+    </div>
+  </body>
+</html>
