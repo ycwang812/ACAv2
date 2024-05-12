@@ -1,0 +1,92 @@
+<html>
+  <body>
+    <!--top right bottom left-->
+    <div style="padding: 5px 40px 5px 20px;">
+
+      <h2 style="color:#194EC4;">AWS Academy Cloud Architecting - Module 5 Challenge Lab Questions</h2>
+
+      <!--NOTE to localization team: Copy this English questions.html file. Rename the copy as one of 'questions-es.html', 'questions-ja.html', 'questions-ko.html', 'questions-pt.html', or 'questions-zh.html'. Then, localize the questions and post the resulting file to the same aws-tc-largeobjects.s3-us-west-2.amazonaws.com/<sku>/<dir>/ location where you found the questions.html English version.-->
+
+      <!--Important: do not edit this line! The lambda function that processes this template will adjust it as needed.-->
+      <p>View questions in: <a href="questions.html">English</a>     </p>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 1: Where is the RDS instance running? Choose the answer that is true and that is the most specific.</h3>
+          <form method="POST" action="https://4w9ati8zzj.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="1">
+
+              <!--Example radio button question (multiple choice, single answer)-->
+              <!--Update the 'value' and the text between <label></label> tags-->
+              <!--To create more answer options, copy the first two lines below and increment the "id" and "for" values-->
+              <input type="radio" id="a1" name="answer" value="A">
+                  <label for="a1">At the Region level</label><br>
+              <input type="radio" id="a2" name="answer" value="B">
+                  <label for="a2">At the Availability Zone level</label><br>
+              <input type="radio" id="a3" name="answer" value="C">
+                  <label for="a3">In an edge location</label><br>
+              <input type="radio" id="a4" name="answer" value="D">
+                  <label for="a4">All of the above</label><br>
+              <br>
+              <!--Keep the line below as is, however increment the # to match the question number-->
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 2: Does the RDS instance have an IPv4 Public IP address assigned to it?</h3>
+          <form method="POST" action="https://4w9ati8zzj.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="2">
+
+              <input type="radio" id="b1" name="answer" value="A">
+                  <label for="b1">Yes</label><br>
+              <input type="radio" id="b2" name="answer" value="B">
+                  <label for="b2">No</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 3: What is the Name tag value applied to the subnet in which the RDS instance is running? (Tip: you may want to open another browser tab and browse to the VPC console to compare the information found in the RDS console's Connectivity & security panel with the VPC service's subnets page details)</h3>
+          <form method="POST" action="https://4w9ati8zzj.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="3">
+
+              <input type="radio" id="c1" name="answer" value="A">
+                  <label for="c1">Public Subnet </label><br>
+              <input type="radio" id="c2" name="answer" value="B">
+                  <label for="c2">Private Subnet 1</label><br>
+              <input type="radio" id="c3" name="answer" value="C">
+                  <label for="c3">Private Subnet 2</label><br>
+              <br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+          <h3>Question 4: How many security group rules are defined for the RDS instance?</h3>
+          <form method="POST" action="https://4w9ati8zzj.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+              <!--Keep the line below as is, however increment the value to match the question number-->
+              <input type="hidden" name="qnum" value="4">
+
+              <input type="radio" id="d1" name="answer" value="A">
+                  <label for="d1">1</label><br>
+              <input type="radio" id="d2" name="answer" value="B">
+                  <label for="d2">2</label><br>
+              <input type="radio" id="d3" name="answer" value="C">
+                  <label for="d3">3</label><br>
+              <input type="radio" id="d4" name="answer" value="D">
+                  <label for="d4">4</label><br>
+              <input style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;" type="submit" value="Submit">
+          </form>
+        </div>
+        <br>
+
+    </div>
+  </body>
+</html>

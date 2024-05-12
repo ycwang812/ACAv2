@@ -1,0 +1,2003 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<meta charset="UTF-8" content=""><meta name="viewport" content="width=device-width initial-scale=1">
+
+<link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet" type="text/css"><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/*
+Version: v1.4
+1. Updated colour to be more accessible.
+2. Included FontAwesome link directly in the css.
+3. Imported Buttons CSS.
+4. Updated font to Amazon Ember.
+*/
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #333333;
+}
+
+/* Importing Font Awesome */
+@import url("file:///Users/awsmira/Library/Application%20Support/abnerworks.Typora/themes/");
+
+/* @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext); /*
+
+
+/* Adding button support */
+#ssb_alexa_blue {
+background-color: #3366ff;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #3366ff;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_alexa_ocean {
+background-color: #00a0d2;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00a0d2;
+white-space: nowrap
+}
+#ssb_alexa_sand {
+background-color: #f2f2f2;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #dcdcdc;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_alexa_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00a0d2;
+position: relative;
+top: -1px;
+border-color: #00a0d2;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_blue {
+background-color: #257ACF;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_orange {
+background-color: #E36000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_catalog_red {
+background-color: #D90000;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_dark_blue {
+color: white;
+background-color: darkblue;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_grafana_blue {
+background-color: #00678b;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00678b;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_green {
+background-color: #629300;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #629300;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grafana_orange {
+background-color: #ec8427;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #ec8427;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_grey {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 5px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_grey_square {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_blue {
+background-color: #00A1C9;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #00A1C9;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_iot_grey {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: gray;
+position: relative;
+top: -1px;
+border-color: gray;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_iot_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #00A1C9;
+position: relative;
+top: -1px;
+border-color: #00A1C9;
+border-radius: 2px;
+border-style: solid;
+border-width: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_kibana_blue {
+background-color: #0079a5;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0079a5;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_kibana_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #0079a5;
+position: relative;
+top: -1px;
+border-color: #0079a5;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_lambda_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_maroon {
+color: white;
+background-color: darkred;
+border-radius: 3px;
+padding: 0px 6px;
+white-space: nowrap
+}
+#ssb_orange {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssl_orange {
+color: #ec7211;
+font-weight: bold
+}
+#ssb_orange_oval {
+background-color: #ec7211;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_oval {
+background-color: #DEDEDE;
+font-weight: bold;
+font-size: 90%;
+color: #444;
+position: relative;
+top: -1px;
+border-radius: 20px;
+border-width: 1px;
+border-style: solid;
+border-color: #444;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_start_lab {
+background-color: #34A853;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_open_console {
+background-color: white;
+font-family: Google Sans;
+font-weight: bold;
+font-size: 90%;
+color: #1a73e8;
+border-color: #dadce0;
+border-radius: 4px;
+border-width: 2px;
+border-style: solid;
+outline-color: #ffffff;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_rds_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_red {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+border-radius: 2px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 3px;
+padding-bottom: 3px
+}
+#ssb_red_oval {
+background-color: #D93025;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 20px;
+white-space: nowrap
+}
+#ssb_s3_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_s3_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #329AD6;
+position: relative;
+top: -1px;
+border-color: #329AD6;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_services {
+background-color: #232f3e;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_square_lex {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #1166bb;
+position: relative;
+top: -1px;
+border-color: #c4cbcd;
+border-style: solid;
+border-width: 2px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px
+}
+#ssb_ssm_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssb_white {
+background-color: white;
+font-weight: bold;
+font-size: 90%;
+color: #545b64;
+position: relative;
+top: -1px;
+border-color: #545b64;
+border-radius: 2px;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssbox_cloudformation_blue {
+font-weight: bold;
+background-color: #f1faff;
+font-size: 90%;
+border-color: #00A1C9;
+border-width: 1px;
+border-style: solid;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#ssl_alexa_ocean {
+color: #00a0d2;
+font-weight: bold
+}
+#ssl_blue {
+color: #1166bb;
+font-weight: bold
+}
+#ssl_catalog_orange {
+color: #E16706;
+font-weight: bold
+}
+#ssb_codestar_blue {
+background-color: #329AD6;
+font-weight: bold;
+font-size: 80%;
+color: white;
+position: relative;
+top: -1px;
+border-radius: 1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+white-space: nowrap
+}
+#ssb_cognito_blue {
+background-color: #2a7fd4;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-radius: 2px;
+white-space: nowrap
+}
+#ssb_eb_blue {
+background-color: #0f6dca;
+font-weight: bold;
+font-size: 90%;
+color: white;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #0055aa;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap;
+}
+#ssb_eb_grey {
+background-color: #e5e5e5;
+font-weight: bold;
+font-size: 90%;
+color: 444444;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #bbbbbb;
+border-width: 1px;
+border-style: solid;
+border-radius: 4px;
+white-space: nowrap
+}
+#ssb_voc_grey {
+background-color: #F2F3F4;
+font-size: 90%;
+color: black;
+position: relative;
+top: -1px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: grey;
+border-width: 1px;
+border-style: solid;
+white-space: nowrap
+}
+
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Amazon Ember", "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #0071bc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #5b616b;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #5b616b; /*#777777*/
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #323a45;  /*#777777*/
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #323a45; /*a7a7a7*/
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #ffffff;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #981b1e;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>README</title>
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: medium !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='模块-5----挑战实验将数据库迁移到-amazon-rds'><span>模块 5 – 挑战实验：将数据库迁移到 Amazon RDS</span></h1><!--Lab borrows from ACOv1 activity 6, but is significantly modified and extended--><h2 id='场景'><span>场景</span></h2><p><span>目前，咖啡馆使用单个 EC2 实例来托管 Web 服务器、数据库和应用程序代码。</span></p><p><span>这一期间咖啡馆的业务实现了增长。数据库中存储的订单历史记录提供了宝贵的业务信息，咖啡馆员工希望确保这些信息不会丢失。Martha 需要这些数据来做账，Frank 会偶尔查看这些数据来计划各种甜点的烘焙数量。</span></p><p><span>Sofía 也有自己的担忧。数据库需要持续地升级和打补丁，但她有时可能腾不出时间。此外，数据库的管理也需要专业技能，而她又不愿意花时间去培训其他人完成数据库管理工作。同时，Sofía 还担心，咖啡馆的数据备份频率不够高。</span></p><p><span>最后，管理数据库需要技术学习投资，而 Martha 希望能够减少与之相关的人工成本。</span></p><p>&nbsp;</p><h2 id='实验概览与目标'><span>实验概览与目标</span></h2><p><span>在本实验中，您需要将数据从 Amazon Elastic Compute Cloud (Amazon EC2) 实例上的数据库迁移到 Amazon Relational Database Service (Amazon RDS)。具体而言，您需要将运行在 EC2 实例上的 MariaDB 数据库，迁移到运行在 Amazon RDS 上的 MariaDB 数据库。您还将更新咖啡馆的 Web 应用程序，以便使用新数据库来存储今后所有订单的数据。</span></p><p><span>完成本实验后，您应当能够：</span></p><ul><li><p><span>创建 RDS 数据库实例</span></p></li><li><p><span>使用 mysqldump 从 MariaDB 数据库导出数据</span></p></li><li><p><span>将 SQL 客户端连接到 RDS 数据库。</span></p></li><li><p><span>将数据从运行在 EC2 实例上的 MariaDB 数据库迁移到 RDS 数据库实例</span></p></li><li><p><span>配置 Web 应用程序使用新的 RDS 数据库实例作为数据存储</span></p></li></ul><p>&nbsp;</p><p><span>在实验</span><em><span>开始</span></em><span>时，AWS 账户中已经提供了以下创建好的资源：</span></p><p><img src="../images/m5ch-lab-start-arch.png" referrerpolicy="no-referrer" alt="开始架构"></p><p><span>在本实验</span><em><span>结束</span></em><span>时，您的架构应与以下示例类似：</span></p><p><img src="../images/m5ch-lab-end-arch.png" referrerpolicy="no-referrer" alt="最终架构"></p><p>&nbsp;</p><h2 id='时长'><span>时长</span></h2><p><span>完成本实验大约需要 </span><strong><span>80 分钟</span></strong><span>。</span></p><p>&nbsp;</p><h2 id='aws-服务限制'><span>AWS 服务限制</span></h2><p><span>本实验环境中对 AWS 服务和服务操作的访问可能仅以完成实验说明为限。如果您尝试访问其他服务或者执行本实验所述之外的操作，可能会出错。</span></p><p>&nbsp;</p><h2 id='访问-aws-管理控制台'><span>访问 AWS 管理控制台</span></h2><ol start='' ><li><p><span>在本说明上方，选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（开始实验）以启动实验。</span></p><p><span>此时将打开 </span><strong><span>Start Lab</span></strong><span>（开始实验）面板，其中显示实验状态。</span></p><p><i class="fas fa-info-circle"></i><span> </span><strong><span>提示</span></strong><span>：如果您需要更多时间来完成实验，请重新选择 </span><span id="ssb_voc_grey"><span>Start Lab</span></span><span>（开始实验）按钮来重新启动环境的计时器。</span></p></li><li><p><span>请等待 </span><strong><span>Start Lab</span></strong><span>（开始实验）面板显示消息 </span><em><span>Lab status: ready</span></em><span>（实验状态：就绪）后，再选择 </span><strong><span>X</span></strong><span> 关闭该面板。</span></p></li><li><p><span>在本说明上方，选择 </span><span id="ssb_voc_grey"><span>AWS</span></span><span>。</span></p><p><span>此操作将会在新的浏览器标签页中打开 AWS 管理控制台。您将自动登录系统。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>提示</span></strong><span>：如果未打开新的浏览器标签页，那么您的浏览器顶部通常会有一个横幅或图标，同时显示一条消息，指明您的浏览器阻止该网站打开弹出窗口。选择该横幅或图标，然后选择 </span><strong><span>Allow pop ups</span></strong><span>（允许弹出窗口）。</span></p></li><li><p><span>排列 </span><strong><span>AWS 管理控制台</span></strong><span>标签页，使其与本说明并排显示。理想情况下，您将同时打开这两个浏览器标签页，从而更轻松地执行实验步骤。</span></p><p><i class="fas fa-exclamation-triangle"></i><span> </span><strong><span>除非特别要求，否则请勿更改区域</span></strong><span>。</span></p><p><span> </span><strong><span>提示</span></strong><span>：要隐藏终端，可以清除屏幕顶部的 </span><strong><span>Terminal</span></strong><span>（终端）复选框。</span></p></li></ol><p>&nbsp;</p><h2 id='业务请求为咖啡馆应用程序创建-rds-实例挑战-1）'><span>业务请求：为咖啡馆应用程序创建 RDS 实例（挑战 1）</span></h2><p><span>Olivia 是一名 AWS 解决方案架构师，经常来这里喝咖啡，在与她进行讨论之后，Sofía 觉得咖啡馆需要一种更易于维护的数据库。此外，该数据库应具备一些基本的功能，例如持久性、可扩展性和高性能。</span></p><p><img src="../images/olivia.png" alt="Olivia" width="300" class="centered_image"></img></p><p><span>在本实验的第一部分中，您将扮演 Sofía 的角色。您将创建 RDS 实例，用作咖啡馆网站的数据存储层。您还将连接到 EC2 实例，并分析咖啡馆 Web 应用程序的详细信息。</span></p><p>&nbsp;</p><h3 id='任务-1创建-rds-实例'><span>任务 1：创建 RDS 实例</span></h3><p><span>在本实验中，您的第一个挑战是创建 RDS 实例。</span></p><ol start='5' ><li><p><span>创建符合规范的 RDS 实例。（在本实验结束提交作业时，系统将对上述多项设置进行检查。要想获得满分，请按照指南操作。）</span></p><ul><li><p><strong><span>Engine type（引擎类型）</span></strong><span>：</span><em><span>MariaDB</span></em></p></li><li><p><strong><span>Templates</span></strong><span>（模板）：</span><em><span>Dev/Test</span></em><span>（开发/测试）</span></p></li><li><p><strong><span>DB instance identifier</span></strong><span>（数据库实例标识符）：</span><code>CafeDatabase</code></p></li><li><p><strong><span>Username</span></strong><span>（用户名）：</span><code>admin</code></p></li><li><p><strong><span>Password</span></strong><span>（密码）：</span><code>Caf3DbPassw0rd!</code></p><ul><li><p><i class="fas fa-exclamation-triangle"></i><span> 您必须完全按原样使用密码。</span></p></li><li><p><strong><span>提示</span></strong><span>：请复制并粘贴密码来进行设置。</span></p></li></ul></li><li><p><strong><span>DB Instance Class</span></strong><span>（数据库实例类）：</span><em><span>db.t3.micro</span></em></p></li><li><p><strong><span>Storage type</span></strong><span>（存储类型）：</span><em><span>General Purpose (SSD)</span></em><span>（通用型 (SSD)）</span></p></li><li><p><strong><span>Allocated storage</span></strong><span>（分配的存储空间）：</span><code>20</code><span> GiB</span></p></li><li><p><span>请</span><em><span>勿</span></em><span>请勿创建备用实例</span></p></li><li><p><span>将实例放在 </span><strong><span>Lab VPC</span></strong><span> 中</span></p></li><li><p><strong><span>Subnet Group</span></strong><span>（子网组）：</span><code>lab-db-subnet-group</code><span>，其中的数据库</span><em><span>不可</span></em><span>公开访问。</span></p></li><li><p><span>选择名为 </span><code>dbSG</code><span> 的现有 </span><strong><span>VPC 安全组</span></strong><span>，然后</span><em><span>取消选择</span></em><span> </span><code>default</code><span> 安全组。</span></p></li><li><p><strong><span>Availability Zone</span></strong><span>（可用区）：选择列表中的第一个可用区，以 </span><code>a</code><span> 结尾。例如，如果区域为 </span><em><span>us-east-1</span></em><span>，请选择 </span><strong><span>us-east-1a</span></strong><span>。</span></p></li><li><p><strong><span>Database port</span></strong><span>（数据库端口）：保留默认 TCP 端口 </span><em><span>3306</span></em><span>。</span></p></li><li><p><span>在实验环境中</span><em><span>不</span></em><span>支持增强监控。请清除默认设置。</span></p></li></ul></li></ol><p><span> </span><img src="../images/db-creating.png" referrerpolicy="no-referrer" alt="数据库创建中"></p><p>&nbsp;</p><p><strong><span>重要提示</span></strong><span>：不要等待数据库完成创建过程，请在成功启动数据库创建过程之后继续执行下一步。</span></p><p>&nbsp;</p><h3 id='任务-2分析现有咖啡馆应用程序部署'><span>任务 2：分析现有咖啡馆应用程序部署</span></h3><p><span>在此任务中，您将连接到运行当前咖啡馆应用程序的现有 EC2 实例。</span></p><ol start='6' ><li><p><span>浏览到 EC2 控制台，然后选择 </span><strong><span>Running instances</span></strong><span>（正在运行的实例）。</span></p><p><span>请注意，正在运行的实例名为 </span><strong><span>CafeServer</span></strong><span>。此 EC2 实例是实验开始时创建的。</span></p></li><li><p><span>测试咖啡馆应用程序。</span></p><ul><li><p><span>打开新的浏览器标签页，然后通过地址 </span><code>http://&lt;public-ip-address&gt;/cafe</code><span> 加载咖啡馆应用程序。</span></p><p><strong><span>注意</span></strong><span>：请使用 </span><em><span>CafeServer</span></em><span> 实例的实际 IPv4 公有 IP 地址更换 &lt;</span><em><span>public-ip-address</span></em><span>&gt;。</span></p></li><li><p><span>浏览到 </span><strong><span>Menu</span></strong><span>（菜单）页面，然后测试下单。</span></p><p><span>要完成测试，请将至少一个菜单项的数量更改为至少 </span><em><span>1</span></em><span>，然后选择 </span><strong><span>Submit Order</span></strong><span>（提交订单）。</span></p><p><span>此时应显示 </span><strong><span>Order Confirmation</span></strong><span>（订单确认）页面，表明咖啡馆网站运行正常。</span></p></li><li><p><span>选择 </span><strong><span>Order History</span></strong><span>（订单历史记录）。</span></p><p><span>页面显示已经下了多个订单。当前的数据库包含过去的客户订单，您要将这些订单迁移到托管在 Amazon RDS 上的数据库。</span></p></li></ul></li></ol><ol start='8' ><li><p><span>使用 AWS Systems Manager 连接到 EC2 实例，以在浏览器中访问终端会话。</span></p><ul><li><p><span>返回 AWS 管理控制台，导航到 </span><strong><span>Systems Manager</span></strong><span> 控制台，然后选择 </span><strong><span>Session Manager</span></strong><span>。</span></p></li><li><p><span>启动会话并连接到 </span><strong><span>CafeServer</span></strong><span>。</span></p><p><span>现在您应该打开了新的浏览器标签页，其中有一个连接到 EC2 实例的终端会话。</span></p></li><li><p><span>在提示符中，输入以下命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">bash</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">su</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">su</span> ec2-user</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">whoami</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">cd</span> /home/ec2-user/</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 110px;"></div><div class="CodeMirror-gutters" style="display: none; height: 110px;"></div></div></div></pre><p><strong><span>分析</span></strong><span>：第一个命令提供了 Bash shell。第二个命令将会话切换为在 EC2 实例上使用根用户账户。第三个命令将您切换为使用 </span><em><span>ec2-user</span></em><span> 账户。第四个命令应该返回输出，确认您已使用 ec2-user 身份连接。最后一个命令将您的终端切换到 ec2-user 的主目录。</span></p></li></ul></li></ol><p><img src="../images/sess-mgr.png" alt="Session Manager 屏幕截图" width="400"></p><p><strong><span>注意</span></strong><span>：默认情况下，Systems Manager 代理 (</span><em><span>ssm agent</span></em><span>) 安装在所有 Amazon Linux 2 实例（以及其他一些操作系统类型）上。当您启动实验并且创建了 EC2 实例时，用户数据指定应在实例上启动 ssm 代理服务。此外，EC2 实例上还附加了 AWS Identity and Access Management (IAM) 角色，该角色包含名为 </span><em><span>AmazonSSMManagedInstanceCore</span></em><span> 的 IAM 策略。这两个操作实现了通过 Systems Manager Session Manager 访问实例。</span></p><p>&nbsp;</p><h2 id='新业务要求从旧数据库导出数据并建立与新数据库的连接挑战-2）'><span>新业务要求：从旧数据库导出数据，并建立与新数据库的连接（挑战 2）</span></h2><p><span>在创建了新 RDS 实例之后，现在您可以继续执行咖啡馆数据库迁移计划的下一个步骤。接下来，您将从咖啡馆应用程序当前使用的数据库导出数据。您还将从 EC2 实例（运行应用程序的实例），建立与新 RDS 数据库实例的连接。</span></p><p><span>在此挑战中，您继续以 Sofía 的身份完成这些任务。</span></p><h3 id='任务-3处理-ec2-实例上的数据库'><span>任务 3：处理 EC2 实例上的数据库</span></h3><p><span>在此任务中，您将观察在 EC2 实例上运行的 MariaDB 数据库的详细信息。然后，使用 </span><em><span>mysqldump</span></em><span> 实用程序，从数据库导出现有订单历史记录数据。</span></p><ol start='9' ><li><p><span>观察在 EC2 实例上运行的数据库的详细信息。</span></p><p><span>在终端中，运行以下命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">service</span> mariadb status</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">--version</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 44px;"></div></div></div></pre><p><span>输出中应显示，在此 EC2 实例上本地安装的 MariaDB 数据库正在运行。输出中还应显示数据库的版本号。</span></p><p><span>让该浏览器标签页保持打开状态。在本实验过程中，您将使用该标签页。</span></p></li></ol><ol start='10' ><li><p><span>返回到打开了 </span><strong><span>AWS Systems Manager</span></strong><span> 的浏览器标签页。</span></p></li></ol><ol start='11' ><li><p><span>在左侧面板的 </span><strong><span>Application Management</span></strong><span>（应用程序管理）下，选择 </span><strong><span>Parameter Store</span></strong><span>。</span></p><p><span>请注意，这里存储了 7 个参数。咖啡馆应用程序的 PHP 代码引用了这些值（比如说，用于检索数据库的连接信息）。</span></p><ul><li><p><span>选择 </span><code>/cafe/dbPassword</code><span> 参数，并将 </span><strong><span>Value</span></strong><span>（值）复制到剪贴板。稍后您将使用此值。</span></p></li></ul></li></ol><ol start='12' ><li><p><span>连接到在 EC2 实例上运行的数据库。</span></p><p><span>在打开了 Bash 终端的浏览器标签页中，通过运行以下命令，将基于终端的 MySQL 客户端连接到数据库：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>在提示输入数据库密码时，请粘贴刚复制的 </span><em><span>dbPassword</span></em><span> 参数值。</span></p><p><span>此时将显示 </span><code>mariadb&gt;</code><span> 提示。该提示指示您现已连接到此 EC2 实例上运行的 MariaDB 数据库。</span></p></li></ol><p><img src="../images/db-client.png" referrerpolicy="no-referrer" alt="database-client"></p><ol start='13' ><li><p><span>观察现有数据库中的数据。</span></p><p><span>要观察数据库的内容，请输入以下命令。具体而言，您将查看支持咖啡馆 Web 应用程序的表。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">databases</span><span class="cm-punctuation">;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">use</span> cafe_db<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">tables</span><span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 88px;"></div><div class="CodeMirror-gutters" style="display: none; height: 88px;"></div></div></div></pre><p><span>这些命令会显示所有订单，包括您刚下的订单。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order_item`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>此命令显示订单行项目。每个订单号中，所订购的每种商品类型都有一行，列出关于各商品数量和价格的详细信息。</span></p><p><span>所有这些数据将迁移到新的数据库。</span></p></li><li><p><span>退出 SQL 客户端。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ol><ol start='15' ><li><p><span>使用 </span><em><span>mysqldump</span></em><span> 实用程序捕获文件中的现有数据。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysqldump <span class="cm-attribute">--databases</span> cafe_db <span class="cm-attribute">-u</span> root <span class="cm-attribute">-p</span> &gt; CafeDbDump.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre><p><span>在提示输入数据库密码时，请粘贴 Systems Manager Parameter Store 中的 </span><em><span>dbPassword</span></em><span> 值。</span></p></li></ol><ol start='16' ><li><p><span>确认 </span><em><span>mysqldump</span></em><span> 已成功。</span></p><ul><li><p><span>在终端中运行 </span><code>ls</code><span> 命令。输出应显示已经创建了 </span><code>CafeDbDump.sql</code><span> 文件。</span></p></li><li><p><span>运行 </span><code>cat CafeDbDump.sql</code><span> 命令以查看文件的内容。</span></p><p><span>在实验接下来的部分中，您将此数据导入新 RDS 数据库。</span></p></li></ul></li></ol><p>&nbsp;</p><h3 id='任务-4使用-rds-数据库'><span>任务 4：使用 RDS 数据库</span></h3><p><span>在此任务中，您将先回答几个关于所创建的 RDS 实例的问题。然后，确认可以连接到 RDS 实例。</span></p><ol start='17' ><li><p><span>在 AWS 管理控制台中，返回 </span><strong><span>RDS</span></strong><span> 服务控制台，确认您创建的 </span><em><span>cafedatabase</span></em><span> RDS 实例现已可用。</span></p></li></ol><p>&nbsp;</p><h4 id='回答有关-rds-实例的问题'><span>回答有关 RDS 实例的问题</span></h4><p><span>实验结束时，选择蓝色 </span><strong><span>Submit</span></strong><span>（提交）按钮即可记录答案。</span></p><ol start='18' ><li><p><span>查看本实验中的问题。</span></p><ul><li><p><span>在本说明的上方，选择 </span><strong><span>Details &gt; Show</span></strong><span>（详细信息 &gt; 显示）。</span></p></li><li><p><span>选择 </span><strong><span>Access the multiple choice questions</span></strong><span>（访问单选题）链接。</span></p></li></ul></li><li><p><span>在您加载的页面中，回答前四个问题：</span></p><ul><li><p><span>问题 1：RDS 实例在哪里运行？</span></p></li><li><p><span>问题 2：RDS 实例是否具有所分配的 IPv4 公有 IP 地址？</span></p></li><li><p><span>问题 3：对于运行 RDS 实例的子网，应用了什么</span><strong><span>名称</span></strong><span>标签？</span></p></li><li><p><span>问题 4：为 RDS 实例定义了多少个安全组规则？</span></p></li></ul></li></ol><p>&nbsp;</p><ol start='20' ><li><p><span>从 EC2 实例上运行的终端，建立与 RDS 实例的连接。</span></p></li></ol><p><span>以下是一些入门提示：</span></p><details>
+  <summary>
+  <b>提示 1</b>（单击以展开）
+  </summary>
+	以下是您可用于连接的语法：
+	<code> mysql -u admin -p --host &lt;rds-endpoint></code>
+<br>使用 RDS 实例的 RDS 终端节点替换 &lt;rds-endpoint>。<br>运行命令之后，系统将提示您输入 RDS 实例的密码。您在创建 RDS 实例时定义了此密码。
+</details><br><details>
+  <summary>
+  <b>提示 2</b>（单击以展开）
+  </summary>
+	即使输入了正确的 RDS 终端节点和数据库密码，您仍无法连接。您必须更新运行 RDS 实例的安全组的入站规则。MySQL 客户端软件会尝试在 TCP 端口 3306 上连接到数据库。
+</details><br><details>
+  <summary>
+  <b>提示 3</b>（单击以展开）
+  </summary>
+  避免对<i>所有</i> 源 IP 地址开放端口 3306。这样会造成安全隐患。相反，您应该仅对发起连接的 EC2 实例所使用安全组中的服务器开放端口（请尝试在源字段中键入 <code>sg-</code> 以查看选项）。
+</details><br><details>
+  <summary>
+  <b>提示 4</b>（单击以展开）
+  </summary>
+  您可以确认，安全组设置在 TCP 端口 3306 上允许从 EC2 实例到数据库的流量。请尝试在 Systems Manager Session Manager 终端中运行这些命令（使用实际 RDS 终端节点替换 <rds-endpoint>）：<br><code>nmap -Pn &lt;rds-endpoint></code><br>如果命令的输出显示端口 3306 对 *mysql* 服务开放，即确认了安全组设置允许流量。<br>如果 <i>nmap</i> 显示端口<i>开放</i>，则 <code>mysql -u admin -p --host &lt;rds-endpoint></code> 命令也应该正常工作。（但是，您必须正确输入数据库密码。此密码是您在创建实例时设置的密码。）
+</details>  <br><p><strong><span>注意</span></strong><span>：如果仍无法解决问题，您可以尝试提交实验说明末尾的 </span><strong><span>Submitting your work</span></strong><span>（提交作业）部分中的作业。生成的</span><strong><span>提交报告</span></strong><span>可以为未成功完成的实验部分提供额外的提示。您可以根据需要提交作业任意次。系统只保留您最后一次提交的分数。</span></p><p><span>在继续执行下一步之前，请务必确认可以成功连接到 RDS MariaDB。如果您已成功连接，恭喜！</span></p><ol start='21' ><li><p><span>运行 </span><code>show databases;</code><span> 命令。应显示如下输出：</span></p><p><img src="../images/rds-client.png" referrerpolicy="no-referrer" alt="rds-client"></p><ul><li><p><span>请注意，</span><em><span>cafe_db</span></em><span> 数据库尚不在列表中。这种情况是预料之中的，因为您尚未导入任何数据。</span></p></li><li><p><span>要断开连接，请运行 </span><code>exit;</code><span> 命令。</span></p></li></ul></li></ol><p>&nbsp;</p><h2 id='新业务要求导入数据并将应用程序连接到新数据库挑战-3）'><span>新业务要求：导入数据并将应用程序连接到新数据库（挑战 3）</span></h2><p><span>在之前的挑战中，您从咖啡馆应用程序当前使用的数据库中导出数据，并从 EC2 实例建立了与 RDS 实例的连接。现在，您可以处理接下来的业务需求。</span></p><p><span>在此挑战中，您将继续使用 Sofía 的角色，将咖啡馆数据导入到 RDS 数据库实例中。完成导入之后，您需要配置应用程序来使用新数据库。</span></p><p>&nbsp;</p><h3 id='任务-5将数据导入-rds-数据库实例'><span>任务 5：将数据导入 RDS 数据库实例</span></h3><ol start='22' ><li><p><span>将您在任务 3 中导出的数据导入到 RDS 数据库实例。</span></p><ul><li><p><span>要导入数据，请在终端中运行以下命令（其中 </span><code>&lt;rds-endpoint&gt;</code><span> 是实际终端节点）：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql <span class="cm-attribute">-u</span> admin <span class="cm-attribute">-p</span> <span class="cm-attribute">--host</span> &lt;rds-endpoint&gt; &lt; CafeDbDump.sql</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>出现密码提示时，输入 RDS 实例的密码。</span></p><p><span>如果没有显示任何错误，则表示命令很可能已经成功运行。</span></p></li></ul></li></ol><ol start='23' ><li><p><span>确认数据已导入。</span></p><ul><li><p><span>要连接到 RDS 数据库，请运行此命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql -u admin -p --host &lt;rds-endpoint&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>出现密码提示时，输入 RDS 实例的密码。</span></p></li><li><p><span>要确认数据已导入，请运行以下命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">databases</span><span class="cm-punctuation">;</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">use</span> cafe_db<span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">show</span> <span class="cm-keyword">tables</span><span class="cm-punctuation">;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">select</span> <span class="cm-operator">*</span> <span class="cm-keyword">from</span> <span class="cm-variable-2">`order`</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 88px;"></div><div class="CodeMirror-gutters" style="display: none; height: 88px;"></div></div></div></pre></li></ul><p><em><span>select</span></em><span> 语句的输出应该至少显示数据库中的 24 个订单。</span></p><ul><li><p><span>退出 SQL 客户端：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="sql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="sql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">exit</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li></ul></li></ol><p>&nbsp;</p><h3 id='任务-6将咖啡馆应用程序连接到新数据库'><span>任务 6：将咖啡馆应用程序连接到新数据库</span></h3><p><span>这是本实验最后一个任务，您需要将咖啡馆应用程序连接到新数据库，并停止在 EC2 实例上本地运行的数据库。</span></p><ol start='24' ><li><p><span>返回到 </span><strong><span>AWS Systems Manager</span></strong><span> 控制台浏览器标签页。</span></p></li></ol><ol start='25' ><li><p><span>从左侧面板中，选择 </span><strong><span>Parameter Store</span></strong><span>。</span></p><p><span>回想一下，在之前的挑战实验中，咖啡馆应用程序的 PHP 代码引用了这些值。比如说，用于检索数据库的连接信息。</span></p></li></ol><ol start='26' ><li><p><span>将咖啡馆应用程序连接到 RDS 实例。</span></p><p><span>由于数据库连接信息已更改，您必须更新这些值，以将应用程序连接到新的 RDS 数据库实例，而不是运行在 EC2 实例上的数据库。</span></p></li></ol><details>
+  <summary>
+  <b>提示 1</b>（单击以展开）
+  </summary>
+在更新了应用程序所连接到的数据库之后，使用 <code>http://&lt;public-ip>/cafe/menu.php</code> 页面来测试您是否成功更新了连接。
+</details><br><details>
+  <summary>
+  <b>提示 2</b>（单击以展开）
+  </summary>
+PHP 代码无需任何更新。此外，如果您已成功完成本实验中之前的挑战，则不需要额外更改网络配置。您唯一需要进行的更新是在 Systems Manager Parameter Store 中更新一些值。
+</details><br><details>
+  <summary>
+  <b>提示 3</b>（单击以展开）
+  </summary>
+<i>currency</i>、<i>dbName</i>、<i>timeZone</i> 和 <i>showServerInfo</i> 值无需更新。
+</details><br><details>
+  <summary>
+  <b>提示 4</b>（单击以展开）
+  </summary>
+<i>dbUrl</i> 应该为 RDS 终端节点值。
+</details><br><ol start='27' ><li><p><span>确认您的 Web 应用程序现在使用了新数据库。</span></p><ul><li><p><span>停止仍在 EC2 实例上运行的数据库。在终端中，使用此命令：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="bash"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="bash"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">sudo</span> <span class="cm-builtin">service</span> mariadb <span class="cm-builtin">stop</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 22px;"></div></div></div></pre></li><li><p><span>加载 </span><code>http://&lt;public-ip&gt;/cafe/menu.php</code><span> 页面，通过下单确认应用程序仍运行正常。</span></p></li><li><p><span>选择 </span><strong><span>Order History</span></strong><span>（订单历史记录）。您最新的订单，以及所有其他之前的订单应都在此处。这些订单是您迁移到新数据库的数据。</span></p></li></ul></li></ol><p>&nbsp;</p><h2 id='咖啡馆更新'><span>咖啡馆更新</span></h2><p><img src="../images/cafe-team.png" alt="咖啡馆团队" width="500" class="centered_image"></p><p><span>咖啡馆的每个人对数据库迁移的成果都很满意。Sofía 和 Nikhil 现在周末有更多空闲时间，这意味着 Frank 和 Martha 节省了人工费用。</span></p><p><span>Sofía 现在有时间和朋友一起放松了。不过，她还在考虑如何继续改进。下一个值得考虑的方向是减少 EC2 实例所用 EBS 卷的大小。通过更改为较小的 EC2 实例类型，也可以节省费用。由于数据库不再运行在 EC2 实例上，实例现在有了多余的硬盘空间，同样，所需的 CPU 和内存也有所减少。</span></p><p>&nbsp;</p><h2 id='提交作业'><span>提交作业</span></h2><ol start='28' ><li><p><span>在本说明上方，选择 </span><span id="ssb_blue"><span>Submit</span></span><span>（提交）以记录您的进度，并在出现提示时选择 </span><strong><span>Yes</span></strong><span>（是）。</span></p></li><li><p><span>如果在几分钟后仍未显示结果，请返回到本说明上方，并选择 </span><span id="ssb_voc_grey"><span>Grades</span></span><span>（成绩）</span></p><p><span> </span><strong><span>提示</span></strong><span>：您可以多次提交作业。更改作业后，再次选择 </span><strong><span>Submit</span></strong><span>（提交）。您最后一次提交的作业将记为本实验内容的作业。</span></p></li><li><p><span>要查找有关作业的详细反馈，请选择 </span><span id="ssb_voc_grey"><span>Details</span></span><span>（详细信息），然后选择 </span><i class="fas fa-caret-right"></i><span> </span><strong><span>View Submission Report</span></strong><span>（查看提交报告）。</span></p></li></ol><p>&nbsp;</p><h2 id='实验完成'><span>实验完成</span></h2><p><i class="icon-flag-checkered"></i><span> 恭喜！您已完成本实验。</span></p><ol start='31' ><li><p><span>要确认您希望结束实验，请选择此页面顶部的 </span><strong><span id="ssb_voc_grey"><span>End Lab</span></span></strong><span>（结束实验），然后选择 </span><strong><span id="ssb_blue"><span>Yes</span></span></strong><span>（是）。</span></p><p><span>此时应显示一个面板，其中包含这样一条消息：</span><em><span>DELETE has been initiated...You may close this message box now.</span></em><span>（删除操作已启动... 您现在可以关闭此消息框）。</span></p></li></ol><ol start='32' ><li><p><span>选择右上角的 </span><strong><span>X</span></strong><span> 关闭面板。</span></p></li></ol><p>&nbsp;</p><p><em><span>©2023 Amazon Web Services, Inc. 和其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止因商业目的复制、出借或出售本文。</span></em></p></div></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"882bec3eae87ce38","version":"2024.4.1","token":"a73834a4a1444e9ab89e8da06da41720"}' crossorigin="anonymous"></script>
+</body>
+</html>
