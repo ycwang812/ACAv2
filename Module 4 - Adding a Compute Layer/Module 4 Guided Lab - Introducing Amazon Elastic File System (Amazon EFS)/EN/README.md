@@ -301,7 +301,7 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 
 53. On the graph, choose and drag around the data line. If you do not see the line graph, adjust the time range of the graph to display the period during which you ran the `fio` command.
 
-    <img src="images/graph.png" alt="choose drag" width="600" >
+    <img src="../images/graph.png" alt="choose drag" width="600" >
 
 
 54. Pause your pointer on the data line in the graph. The value should be *105M*.
