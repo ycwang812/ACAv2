@@ -1,0 +1,102 @@
+<html>
+
+<body>
+    <!--top right bottom left-->
+    <div style="padding: 5px 40px 5px 20px;">
+
+        <h2 style="color:#194EC4;">AWS Academy Cloud Architecting - Module 3 Challenge Lab Questions</h2>
+
+        <!--NOTE to localization team: Copy this English questions.html file. Rename the copy as one of 'questions-es.html', 'questions-ja.html', 'questions-ko.html', 'questions-pt.html', or 'questions-zh.html'. Then, localize the questions and post the resulting file to the same aws-tc-largeobjects.s3-us-west-2.amazonaws.com/<sku>/<dir>/ location where you found the questions.html English version.-->
+
+        <!--Important: do not edit this line! The lambda function that processes this template will adjust it as needed.-->
+        <p>View questions in: <a href="questions.html">English</a>     </p>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 5px; background-color: #EEF0F5;">
+            <h3>Question 1: When viewing the website after Task 3, do you see the page in the browser?</h3>
+            <form method="POST" action="https://ctwfyw8aei.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+                <!--Keep the line below as is, however increment the value to match the question number-->
+                <input type="hidden" name="qnum" value="1">
+                <input type="radio" id="a1" name="answer" value="Yes">
+                <label for="a1">Yes, everything looks great!</label><br>
+                <input type="radio" id="a2" name="answer" value="No">
+                <label for="a2">No, the files are not publicly accessible.</label><br>
+                <br>
+                <input
+                    style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;"
+                    type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+
+        <div style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 5px; background-color: #EEF0F5;">
+            <h3>Question 2: What is another way to ensure maximum protection and prevent the accidental deletion of a
+                preserved version?</h3>
+            <form method="POST" action="https://ctwfyw8aei.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+                <!--Keep the line below as is, however increment the value to match the question number-->
+                <input type="hidden" name="qnum" value="2">
+                <input type="radio" id="b1" name="answer" value="A">
+                <label for="b1">Cross-Region replication</label><br>
+                <input type="radio" id="b2" name="answer" value="B">
+                <label for="b2">Multi-factor authentication</label><br>
+                <input type="radio" id="b3" name="answer" value="C">
+                <label for="b3">Cross-Origin Resource Sharing (CORS)</label><br>
+                <input type="radio" id="b4" name="answer" value="D">
+                <label for="b4">Bucket policy</label><br>
+                <br>
+                <input
+                    style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;"
+                    type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+
+        <div
+            style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+            <h3>Question 3: Do you see the objects from your source bucket in the destination bucket? </h3>
+            <form method="POST" action="https://ctwfyw8aei.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+                <!--Keep the line below as is, however increment the value to match the question number-->
+                <input type="hidden" name="qnum" value="3">
+                <!--Example radio button question (multiple choice, single answer)-->
+                <!--Update the 'value' and the text between <label></label> tags-->
+                <!--To create more answer options, copy the first two lines below and increment the "id" and "for" values-->
+                <input type="radio" id="c1" name="answer" value="Yes">
+                <label for="c1">Yes</label><br>
+                <input type="radio" id="c2" name="answer" value="No">
+                <label for="c2">No</label><br>
+                <br>
+                <!--Keep the line below as is, however increment the # to match the question number-->
+                <input
+                    style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;"
+                    type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+
+        <div
+            style="border: 1px solid grey; padding: 5px 10px 5px 10px; border-radius: 25px; background-color: #EEF0F5;">
+            <h3>Question 4: Was the version that you just deleted from your source bucket also deleted from your destination bucket? </h3>
+            <form method="POST" action="https://ctwfyw8aei.execute-api.us-east-1.amazonaws.com/RecordAnswers">
+                <!--Keep the line below as is, however increment the value to match the question number-->
+                <input type="hidden" name="qnum" value="4">
+                <!--Example radio button question (multiple choice, single answer)-->
+                <!--Update the 'value' and the text between <label></label> tags-->
+                <!--To create more answer options, copy the first two lines below and increment the "id" and "for" values-->
+                <input type="radio" id="d1" name="answer" value="Yes">
+                <label for="d1">Yes</label><br>
+                <input type="radio" id="d2" name="answer" value="No">
+                <label for="d2">No</label><br>
+                <br>
+                <!-- Answer: No. If you specify an object version ID in a DELETE request, Amazon S3 deletes that object version in the source bucket. However, it doesn't replicate the deletion in the destination bucket. That is, Amazon S3 doesn't delete the same object version from the destination bucket. This behavior protects data from malicious deletions. For more information, refer to What Does Amazon S3 Replicate? -->
+                <!--Keep the line below as is, however increment the # to match the question number-->
+                <input
+                    style="padding: 8px 8px; color: white; background-color: #747578; border: none; border-radius: 5px;"
+                    type="submit" value="Submit">
+            </form>
+        </div>
+        <br>
+
+        <br>
+    </div>
+</body>
+
+</html>
