@@ -1,618 +1,3 @@
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-<style type="text/css">
-    #ssb_alexa_blue {
-        background-color: #3366ff;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #3366ff;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_alexa_ocean {
-        background-color: #00a0d2;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #00a0d2;
-        white-space: nowrap
-    }
-    #ssb_alexa_sand {
-        background-color: #f2f2f2;
-        font-weight: bold;
-        font-size: 90%;
-        color: #00a0d2;
-        position: relative;
-        top: -1px;
-        border-color: #dcdcdc;
-        border-style: solid;
-        border-width: 2px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_alexa_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #00a0d2;
-        position: relative;
-        top: -1px;
-        border-color: #00a0d2;
-        border-style: solid;
-        border-width: 2px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_blue {
-        background-color: #257ACF;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        border-radius: 5px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_catalog_orange {
-        background-color: #E36000;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        border-radius: 1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_catalog_red {
-        background-color: #D90000;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        border-radius: 5px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_dark_blue {
-        color: white;
-        background-color: darkblue;
-        border-radius: 3px;
-        padding: 0px 6px;
-        white-space: nowrap
-    }
-    #ssb_grafana_blue {
-        background-color: #00678b;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #00678b;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_grafana_green {
-        background-color: #629300;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #629300;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_grafana_orange {
-        background-color: #ec8427;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #ec8427;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_grey {
-        background-color: #DEDEDE;
-        font-weight: bold;
-        font-size: 90%;
-        color: #444;
-        position: relative;
-        top: -1px;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #444;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_grey_square {
-        background-color: #DEDEDE;
-        font-weight: bold;
-        font-size: 90%;
-        color: #444;
-        position: relative;
-        top: -1px;
-        border-radius: 1px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #444;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_iot_blue {
-        background-color: #00A1C9;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #00A1C9;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_iot_grey {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: gray;
-        position: relative;
-        top: -1px;
-        border-color: gray;
-        border-radius: 2px;
-        border-style: solid;
-        border-width: 1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_iot_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #00A1C9;
-        position: relative;
-        top: -1px;
-        border-color: #00A1C9;
-        border-radius: 2px;
-        border-style: solid;
-        border-width: 1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_kibana_blue {
-        background-color: #0079a5;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #0079a5;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_kibana_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #0079a5;
-        position: relative;
-        top: -1px;
-        border-color: #0079a5;
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_lambda_orange {
-        background-color: #ec7211;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_lambda_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #545b64;
-        position: relative;
-        top: -1px;
-        border-color: #545b64;
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_maroon {
-        color: white;
-        background-color: darkred;
-        border-radius: 3px;
-        padding: 0px 6px;
-        white-space: nowrap
-    }
-    #ssb_orange {
-        background-color: #ec7211;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssl_orange {
-        color: #ec7211;
-        font-weight: bold
-    }
-    #ssb_orange_oval {
-        background-color: #ec7211;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 20px;
-        white-space: nowrap
-    }
-    #ssb_oval {
-        background-color: #DEDEDE;
-        font-weight: bold;
-        font-size: 90%;
-        color: #444;
-        position: relative;
-        top: -1px;
-        border-radius: 20px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #444;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_start_lab {
-        background-color: #34A853;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        border-radius: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px
-    }
-    #ssb_open_console {
-        background-color: white;
-        font-family: Google Sans;
-        font-weight: bold;
-        font-size: 90%;
-        color: #1a73e8;
-        border-color: #dadce0;
-        border-radius: 4px;
-        border-width: 2px;
-        border-style: solid;
-        outline-color: #ffffff;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        padding-right: 10px
-    }
-    #ssb_rds_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #545b64;
-        position: relative;
-        top: -1px;
-        border-color: #545b64;
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_red {
-        background-color: #D93025;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        border-radius: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px
-    }
-    #ssb_red_oval {
-        background-color: #D93025;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 20px;
-        white-space: nowrap
-    }
-    #ssb_s3_blue {
-        background-color: #329AD6;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_s3_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #329AD6;
-        position: relative;
-        top: -1px;
-        border-color: #329AD6;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_services {
-        background-color: #232f3e;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_square_lex {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #1166bb;
-        position: relative;
-        top: -1px;
-        border-color: #c4cbcd;
-        border-style: solid;
-        border-width: 2px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px
-    }
-    #ssb_ssm_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #545b64;
-        position: relative;
-        top: -1px;
-        border-color: #545b64;
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssb_white {
-        background-color: white;
-        font-weight: bold;
-        font-size: 90%;
-        color: #545b64;
-        position: relative;
-        top: -1px;
-        border-color: #545b64;
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssbox_cloudformation_blue {
-        font-weight: bold;
-        background-color: #f1faff;
-        font-size: 90%;
-        border-color: #00A1C9;
-        border-width: 1px;
-        border-style: solid;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    #ssl_alexa_ocean {
-        color: #00a0d2;
-        font-weight: bold
-    }
-    #ssl_blue {
-        color: #1166bb;
-        font-weight: bold
-    }
-    #ssl_catalog_orange {
-        color: #E16706;
-        font-weight: bold
-    }
-    #ssb_codestar_blue {
-        background-color: #329AD6;
-        font-weight: bold;
-        font-size: 80%;
-        color: white;
-        position: relative;
-        top: -1px;
-        border-radius: 1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        white-space: nowrap
-    }
-    #ssb_cognito_blue {
-        background-color: #2a7fd4;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #0055aa;
-        border-radius: 2px;
-        white-space: nowrap
-    }
-    #ssb_eb_blue {
-        background-color: #0f6dca;
-        font-weight: bold;
-        font-size: 90%;
-        color: white;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #0055aa;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: 4px;
-        white-space: nowrap;
-    }
-    #ssb_eb_grey {
-        background-color: #e5e5e5;
-        font-weight: bold;
-        font-size: 90%;
-        color: 444444;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: #bbbbbb;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: 4px;
-        white-space: nowrap
-    }
-    #ssb_voc_grey {
-        background-color: #F2F3F4;
-        font-size: 90%;
-        color: black;
-        position: relative;
-        top: -1px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-color: grey;
-        border-width: 1px;
-        border-style: solid;
-        white-space: nowrap
-    }
-</style>
-
 # 模块 3 挑战实验：为咖啡馆创建静态网站
 
 ## 场景
@@ -623,7 +8,6 @@ Frank 和 Martha 是一对夫妻，他们经营着一家小咖啡馆，售卖甜
 
 Sofía 建议 Frank 和 Martha 提高咖啡馆的社区知名度。目前咖啡馆既没有做过网络宣传，也没有使用过任何云计算服务。不过，这一现状即将发生改变。
 
-<br/>
 ## 实验概览与目标
 
 在本实验中，您将使用 Amazon Simple Storage Service (Amazon S3) 构建静态网站并实施架构最佳实践来保护和管理您的数据。
@@ -634,25 +18,21 @@ Sofía 建议 Frank 和 Martha 提高咖啡馆的社区知名度。目前咖啡�
 - 使用 Amazon S3 通过某种方式保护数据
 - 在 Amazon S3 中实施数据生命周期策略
 - 在 Amazon S3 中实施灾难恢复 (DR, Disaster Recovery) 策略
-<br/>
+
 在本实验结束时，您的架构应与以下示例类似：
 
-![咖啡馆网站架构](images/module-3-challenge-lab-cafe-static-website-architecture.PNG)
+![咖啡馆网站架构](../images/module-3-challenge-lab-cafe-static-website-architecture.PNG)
 
-<br/>
 **注意**：本挑战实验中有几项任务不提供分步说明。您必须通过自行探索来完成这些任务。
 
-<br/>
 ## 时长
 
 完成本实验大约需要 **60 分钟**。
 
-<br/>
 ## AWS 服务限制
 
 本实验环境中对 AWS 服务和服务操作的访问可能仅以完成实验说明为限。如果您尝试访问其他服务或者执行本实验所述之外的操作，可能会出错。
 
-<br/>
 ## 访问 AWS 管理控制台
 
 1. 在本说明上方，选择 <span id="ssb_voc_grey">Start Lab</span>（开始实验）以启动实验。
@@ -671,7 +51,6 @@ Sofía 建议 Frank 和 Martha 提高咖啡馆的社区知名度。目前咖啡�
 
 4. 排列 AWS 管理控制台标签页，使其与本说明并排显示。理想情况下，您将能够同时看到这两个浏览器标签页，从而更轻松地执行实验步骤。
 
-<br/>
 ## 咖啡馆的业务请求：启动静态网站（挑战 #1）
 
 Sofía 向 Nikhil 提到，她希望为咖啡馆创建网站，直观展示咖啡馆的产品，并向客户提供位置、营业时间和电话号码等业务详细信息。
@@ -680,7 +59,6 @@ Nikhil 很高兴能为咖啡馆创建第一个网站。
 
 对于第一个挑战，您将扮演 Nikhil 的角色，使用 Amazon S3 为咖啡馆创建基础网站。
 
-<br/>
 ### 任务 1：提取本实验所需的文件
 
 在此任务中，您将提取创建静态网站所需的文件。
@@ -689,7 +67,6 @@ Nikhil 很高兴能为咖啡馆创建第一个网站。
 
 6. 在您的电脑上提取这些文件。请注意，这些文件将包括 *index.html* 文件和两个文件夹，其中包含级联样式表 (CSS, Cascading Style Sheet) 和图像文件。
 
-<br/>
 ### 任务 2：创建 S3 存储桶来托管静态网站
 
 在此任务中，您将创建 S3 存储桶，并将其配置用于托管静态网站。
@@ -704,7 +81,6 @@ Nikhil 很高兴能为咖啡馆创建第一个网站。
 9. 在存储桶上启用静态网站托管。
    - **提示**：您将使用 *index.html* 文件作为索引文档。
 
-<br/>
 ### 任务 3：将内容上传到 S3 存储桶
 
 在此任务中，您要将静态文件上传到 S3 存储桶。
@@ -713,7 +89,6 @@ Nikhil 很高兴能为咖啡馆创建第一个网站。
 
 11. 在单独的 Web 浏览器标签页中，打开静态网站的终端节点链接。
 
-<br/>
 #### 回答有关实验的问题
 
 实验结束时，选择上方的 **Submit**（提交）按钮即可记录答案。
@@ -729,7 +104,6 @@ Nikhil 很高兴能为咖啡馆创建第一个网站。
 
   **注意**：请在浏览器标签页中将问题网页保持打开状态。稍后您将在本实验中返回到该网页。
 
-<br/>
 ### 任务 4：创建存储桶策略以授予公共读取访问权限
 
 Frank 分享了他为咖啡馆推出*多种*新式甜点的计划。现在您需要为他制作的每种新甜点上传一张图片，并允许公开访问该对象。由于不想手动执行此过程，您决定创建存储桶策略，以使每个对象在上传到文件夹后自动公开。
@@ -740,9 +114,7 @@ Frank 分享了他为咖啡馆推出*多种*新式甜点的计划。现在您需
 
 15. 请确认咖啡馆网站现在可供公开访问。
 
-<br/>
 *恭喜*！咖啡馆静态网站创建成功。
-<br/>
 
 ## 新业务要求：保护网站数据（挑战 #2）
 
@@ -754,7 +126,6 @@ AWS 解决方案架构师 Olivia 是咖啡馆的常客，她建议您实施一�
 
 您本来就需要更新网站，所以也想把握这次探究对象版本控制的好机会。
 
-<br/>
 ### 任务 5：对 S3 存储桶启用版本控制
 
 在此任务中，您将对 S3 存储桶启用版本控制并确认该机制工作正常。
@@ -781,8 +152,6 @@ AWS 解决方案架构师 Olivia 是咖啡馆的常客，她建议您实施一�
 
 	- **问题 2**：要最大程度地保护数据并防止意外删除已保存的版本，还可以采用什么方法？（**提示**：查看 [Amazon S3 常见问题解答](https://aws.amazon.com/s3/faqs/)。）
 
-<br/>
-<br/>
 **架构最佳实践**
 
 在此任务中，您使用了一种方法来实施有关*保护数据*的架构最佳实践。
@@ -792,12 +161,10 @@ AWS 解决方案架构师 Olivia 是咖啡馆的常客，她建议您实施一�
 	根据 <a href = https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf>Well-Architected Framework</a>，版本控制应成为大型数据生命周期管理过程的其中一环。在搭建任何系统架构之前，都应将影响安全性的基础实践落实到位。例如，可以通过<i>数据分类</i>将企业数据分为不同的敏感性级别，或通过<i>加密</i>以难以破解的方式呈现数据，从而防范未经授权的访问。这些工具和技术有助于防止财务损失、遵从监管义务等，其重要程度可见一斑。
 </details>
 
-<br/>
 ## 新业务要求：优化 S3 对象存储的成本（挑战 #3）
 
 目前已启用版本控制，您意识到 S3 存储桶的大小将随着新对象和版本的上传而不断增长。为了节省成本，您决定实施一种策略来停用一些旧版本。
 
-<br/>
 ### 任务 6：设置生命周期策略
 
 在此任务中，您将设置一种生命周期策略，从而让源存储桶中的旧版对象自动移至 S3 标准 – 不频繁访问存储 (S3 Standard-IA)。根据该策略，对象最终将会过期。
@@ -812,7 +179,6 @@ AWS 解决方案架构师 Olivia 是咖啡馆的常客，她建议您实施一�
 
 很好！现在您成功完成了一项生命周期配置，该配置在 30 天后将源存储桶对象的先前版本移至 S3 Standard-IA。该策略还将在 365 天后永久删除 S3 Standard-IA 中的对象。
 
-<br/>
 **架构最佳实践**
 
 在此任务中，您实施了有关*定义数据生命周期管理*的架构最佳实践。
@@ -822,12 +188,10 @@ AWS 解决方案架构师 Olivia 是咖啡馆的常客，她建议您实施一�
 	根据 <a href = https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf>Well-Architected Framework</a>，在实践中，您的生命周期策略应基于数据的<i>关键性和敏感性</i>以及<i>法律和组织要求</i>。您应考虑数据留存持续时间、数据销毁、数据访问管理、数据转换和数据共享等因素。
 </details>
 
-<br/>
 ## 新业务要求：增强持久性并规划 DR（挑战 #4）
 
 当 Olivia 又一次光顾咖啡馆时，您告诉她网站更新了。您向她描述了自己采取的防止网站静态文件被意外覆盖或删除的措施。Olivia 告诉您，Amazon S3 还有一项跨区域复制功能，这个功能也可以用来备份和归档关键数据。
 
-<br/>
 ### 任务 7：启用跨区域复制
 
 在此任务中，您将对源 S3 存储桶启用跨区域复制。
@@ -858,7 +222,7 @@ Statement:
 ```
 
 此访问策略允许该角色对*所有* S3 存储桶执行复制任务。在实际生产环境中，您应将策略限制为仅应用于源和目标 S3 存储桶。有关创建 IAM 角色的更多信息，请参阅[设置复制权限](https://docs.aws.amazon.com/AmazonS3/latest/dev/setting-repl-config-perm-overview.html)。
-<br/>
+
 26. 返回到包含本实验单选题的浏览器标签页，并回答以下问题：
 
 	- **问题 3**：目标存储桶中是否包含源存储桶中的对象？
@@ -875,7 +239,6 @@ Statement:
 
 	- **问题 4**：刚从源存储桶中删除的版本是否也将从目标存储桶中删除？
 
-<br/>
 **架构最佳实践**
 
 在此任务中，您实施了有关*自动实施灾难恢复*的架构最佳实践。
@@ -885,7 +248,6 @@ Statement:
 	根据 <a href = https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf>Well-Architected Framework</a>，DR 策略首先会<i>准备好备份和冗余工作负载组件</i>。您应该使用 AWS 或第三方工具，自动实施系统恢复并将流量路由到 DR 站点或区域。
 </details>
 
-<br/>
 ## 提交作业
 
 32. 在本说明上方，选择 <span id="ssb_blue">Submit</span>（提交）以记录您的进度，并在出现提示时选择 **Yes**（是）。
@@ -896,7 +258,6 @@ Statement:
 
 34. 要查找有关作业的详细反馈，请选择 <span id="ssb_voc_grey">Details</span>（详细信息），然后选择 <i class="fas fa-caret-right"></i> **View Submission Report**（查看提交报告）。
 
-<br/>
 
 ## 实验完成
 
@@ -911,5 +272,4 @@ Statement:
 
 
 
-<br/>
 *©2023 Amazon Web Services, Inc. 和其附属公司。保留所有权利。未经 Amazon Web Services, Inc. 事先书面许可，不得复制或转载本文的部分或全部内容。禁止因商业目的复制、出借或出售本文。*
