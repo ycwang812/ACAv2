@@ -16,17 +16,14 @@
 
 - 检查和监控文件系统的性能
 
-<br/>
 ## 时长
 
 完成本实验大约需要 **20** 分钟。
 
-<br/>
 ## AWS 服务限制
 
 本实验环境中对 AWS 服务和服务操作的访问可能仅以完成实验说明为限。如果您尝试访问其他服务或者执行本实验所述之外的操作，可能会出错。
 
-<br/>
 
 ## 访问 AWS 管理控制台
 
@@ -48,7 +45,6 @@
 
    <i class="fas fa-exclamation-triangle"></i> **除非特别要求，否则请勿更改区域**。
 
-<br/>
 
 ## 任务 1：创建安全组以访问 EFS 文件系统
 
@@ -79,7 +75,6 @@
       * 在 *Custom*（自定义）框中，粘贴复制到文本编辑器中安全组的 **Security group ID**（安全组 ID）
     * 选择 <span id="ssb_orange">Create security group</span>（创建安全组）。
 
-<br/>
 
 ## 任务 2：创建 EFS 文件系统
 
@@ -115,7 +110,7 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
      您的挂载目标应如以下示例所示。该图显示了 **Lab VPC** 中使用 **EFS Mount Target**（EFS 挂载目标）安全组的两个挂载目标。在本实验中，您应使用 **Lab VPC**。
 
-     <img src="images/mount-targets-security-groups.png" alt="目标安全组" width="600" >
+     <img src="../images/mount-targets-security-groups.png" alt="目标安全组" width="600" >
 
 18. 选择 <span id="ssb_orange">Next</span>（下一步）
 
@@ -132,7 +127,6 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
 **注意**：您可能需要在 **File systems**（文件系统）窗格中滚动至右侧，来查找 **File system state**（文件系统状态）。
 
-<br/>
 
 ## 任务 3：通过 SSH 连接到 EC2 实例
 
@@ -234,7 +228,6 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
 <a id='ssh-after'></a>
 
-<br/>
 ## 任务 4：创建新目录并挂载 EFS 文件系统
 
 <i class="fas fa-info-circle" aria-hidden="true"></i> Amazon EFS 在 EC2 实例上挂载文件系统时支持 NFSv4.1 和 NFSv4.0 协议。尽管也支持 NFSv4.0，但我们仍建议您使用 NFSv4.1。在 EC2 实例上挂载 EFS 文件系统时，也必须使用支持所选 NFSv4 协议的 NFS 客户端。本实验中启动的 EC2 实例包括已安装在该实例上的 NFSv4.1 客户端。
@@ -272,10 +265,9 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
     
     请注意已挂载的 EFS 文件系统的*类型*和*大小*。
 
-<img src="images/disk-space.png" alt="磁盘空间" width="600"></img>
+<img src="../images/disk-space.png" alt="磁盘空间" width="600"></img>
 
 
-<br/>
 ## 任务 5：检查新 EFS 文件系统的性能表现
 
 
@@ -291,9 +283,8 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
     <i class="fas fa-comment"></i> `fio` 命令将需要 5 到 10 分钟才能完成。输出应类似于以下屏幕截图中的示例。请务必检查 `fio` 命令的输出，特别是此写入测试的摘要状态信息。
 
-    <img src="images/fio.png" alt="fio" width="600" >
+    <img src="../images/fio.png" alt="fio" width="600" >
 
-<br/>
 ### 使用 Amazon CloudWatch 监控性能
 
 48. 在 **AWS 管理控制台**的 <span id="ssb_services">Services</span>（服务）菜单上，选择 **CloudWatch**。
@@ -310,12 +301,12 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
 53. 在图表中，选择并拖动数据行。如果看不到折线图，请调整折线图的时间范围，以显示运行 `fio` 命令的时段。
 
-    <img src="images/graph.png" alt="选择拖动" width="600" >
+    <img src="../images/graph.png" alt="选择拖动" width="600" >
 
 
 54. 将指针停在图表中的数据行上。该值应为 *105M*。
 
-    <img src="images/throughput.png" alt="吞吐量" width="600" >
+    <img src="../images/throughput.png" alt="吞吐量" width="600" >
     
     
     Amazon EFS 的吞吐量会随着文件系统的增大而扩展。基于文件的工作负载通常是高峰工作负载。它们会在短时间内产生高水平的吞吐量，而在其余时间产生低水平的吞吐量。鉴于此行为，Amazon EFS 设计为在一段时间内可突增到高吞吐量水平。不管大小如何，所有文件系统都能突增到 100MiB/s 的吞吐量。有关 EFS 文件系统性能特征的更多信息，请参阅官方 <a href="http://docs.aws.amazon.com/efs/latest/ug/performance.html" target="_blank">Amazon Elastic File System 文档</a>。
@@ -334,7 +325,7 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 
 60. 将指针停在折线图中的峰值上。取该峰值（以字节为单位），然后除以持续时间（60 秒），即可得出测试期间文件系统的写入吞吐量（以 B/s 为单位）。
 
-    <img src="images/Sum-1-minute.png" alt="总计 1 分钟" width="600" >
+    <img src="../images/Sum-1-minute.png" alt="总计 1 分钟" width="600" >
 
     文件系统可用的吞吐量会随着文件系统的增大而扩展。所有文件系统都提供一致的基准测试性能，即每 TiB 存储 50 MiB/s。此外，不管大小如何，所有文件系统都能突增到 100MiB/s。大于 1TB 的文件系统可以突增至每 TiB 存储 100MiB/s。当您向文件系统中添加数据时，文件系统可用的最大吞吐量会随着存储量自动线性扩展。
 
@@ -343,7 +334,6 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
     <i class="far fa-thumbs-up" style="color:blue"></i> 恭喜！您创建了 EFS 文件系统并将其挂载到了 EC2 实例，同时运行了输入/输出基准测试来检查其性能特征。
     
 
-<br/>
 ## 提交作业
 
 61. 在本说明上方，选择 <span id="ssb_blue">Submit</span>（提交）以记录您的进度，并在出现提示时选择 **Yes**（是）。
@@ -355,7 +345,6 @@ EFS 文件系统可以挂载到在同一区域内的不同可用区中运行的�
 63. 要查找有关作业的详细反馈，请选择 <span id="ssb_voc_grey">Details</span>（详细信息），然后选择 <i class="fas fa-caret-right"></i> **View Submission Report**（查看提交报告）。
 
 
-<br/>
 ## 实验完成 <i class="fas fa-graduation-cap"></i>
 
 <i class="fas fa-flag-checkered"></i> 恭喜！您已完成本实验。
