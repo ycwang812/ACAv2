@@ -16,17 +16,14 @@ After completing this lab, you should be able to:
 
 - Examine and monitor the performance of your file system
 
-<br/>
 ## Duration
 
 This lab requires approximately **20 minutes** to complete.
 
-<br/>
 ## AWS service restrictions
 
 In this lab environment, access to AWS services and service actions might be restricted to the ones that are needed to complete the lab instructions. You might encounter errors if you attempt to access other services or perform actions beyond the ones that are described in this lab.
 
-<br/>
 
 ## Accessing the AWS Management Console
 
@@ -48,7 +45,6 @@ In this lab environment, access to AWS services and service actions might be res
 
    <i class="fas fa-exclamation-triangle"></i> **Do not change the Region unless specifically instructed to do so**.
 
-<br/>
 
 ## Task 1: Creating a security group to access your EFS file system
 
@@ -79,7 +75,6 @@ The security group that you associate with a mount target *must allow inbound ac
       * In the *Custom* box, paste the security group's **Security group ID** that you copied to your text editor
     * Choose <span id="ssb_orange">Create security group</span>.
 
-<br/>
 
 ## Task 2: Creating an EFS file system
 
@@ -115,7 +110,7 @@ EFS file systems can be mounted to multiple EC2 instances that run in different 
 
      Your mount targets should look like the following example. The diagram shows two mount targets in the **Lab VPC** that use the **EFS Mount Target** security group. In this lab, you should be using the Lab VPC.
 
-     <img src="images/mount-targets-security-groups.png" alt="Target Security Groups" width="600" >
+     <img src="../images/mount-targets-security-groups.png" alt="Target Security Groups" width="600" >
 
 18. Choose <span id="ssb_orange">Next</span>
 
@@ -132,7 +127,6 @@ Proceed to the next step after the **Mount target state** for each mount target 
 
 **Note:** You may need to scroll to the right in the **File systems** pane to find the **File system state**.
 
-<br/>
 
 ## Task 3: Connecting to your EC2 instance via SSH
 
@@ -234,7 +228,6 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 
 <a id='ssh-after'></a>
 
-<br/>
 ## Task 4: Creating a new directory and mounting the EFS file system
 
 <i class="fas fa-info-circle" aria-hidden="true"></i> Amazon EFS supports the NFSv4.1 and NFSv4.0 protocols when it mounts your file systems on EC2 instances. Though NFSv4.0 is supported, we recommend that you use NFSv4.1. When you mount your EFS file system on your EC2 instance, you must also use an NFS client that supports your chosen NFSv4 protocol. The EC2 instance that was launched as a part of this lab includes an NFSv4.1 client, which is already installed on it.
@@ -272,10 +265,9 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
     
     Notice the *Type* and *Size* of your mounted EFS file system.
 
-<img src="images/disk-space.png" alt="disk space" width="600">
+<img src="../images/disk-space.png" alt="disk space" width="600">
 
 
-<br/>
 ## Task 5: Examining the performance behavior of your new EFS file system
 
 
@@ -291,9 +283,8 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 
     <i class="fas fa-comment"></i> The `fio` command will take 5–10 minutes to complete. The output should look like the example in the following screenshot. Make sure that you examine the output of your `fio` command, specifically the summary status information for this WRITE test.
 
-    <img src="images/fio.png" alt="fio" width="600" >
+    <img src="../images/fio.png" alt="fio" width="600" >
 
-<br/>
 ### Monitoring performance by using Amazon CloudWatch
 
 48. In the **AWS Management Console**, on the <span id="ssb_services">Services</span> menu, choose **CloudWatch**.
@@ -315,7 +306,7 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 
 54. Pause your pointer on the data line in the graph. The value should be *105M*.
 
-    <img src="images/throughput.png" alt="Throughput" width="600" >
+    <img src="../images/throughput.png" alt="Throughput" width="600" >
     
     
     The throughput of Amazon EFS scales as the file system grows. File-based workloads are typically spiky. They drive high levels of throughput for short periods of time, and low levels of throughput the rest of the time. Because of this behavior, Amazon EFS is designed to burst to high throughput levels for periods of time. All file systems, regardless of size, can burst to 100 MiB/s of throughput. For more information about performance characteristics of your EFS file system, see the official <a href="http://docs.aws.amazon.com/efs/latest/ug/performance.html" target="_blank">Amazon Elastic File System documentation</a>.
@@ -334,7 +325,7 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 
 60. Pause your pointer on the peak of the line graph. Take this number (in bytes) and divide it by the duration in seconds (60 seconds). The result gives you the write throughput (B/s) of your file system during your test.
 
-    <img src="images/Sum-1-minute.png" alt="Sum 1 Minute" width="600" >
+    <img src="../images/Sum-1-minute.png" alt="Sum 1 Minute" width="600" >
 
     The throughput that is available to a file system scales as a file system grows. All file systems deliver a consistent baseline performance of 50 MiB/s per TiB of storage. Also, all file systems (regardless of size) can burst to 100 MiB/s. File systems that are larger than 1T B can burst to 100 MiB/s per TiB of storage. As you add data to your file system, the maximum throughput that is available to the file system scales linearly and automatically with your storage.
 
@@ -343,7 +334,6 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
     <i class="far fa-thumbs-up" style="color:blue"></i> Congratulations! You created an EFS file system, mounted it to an EC2 instance, and ran an I/O benchmark test to examine its performance characteristics.
     
 
-<br/>
 ## Submitting your work
 
 61. At the top of these instructions, choose <span id="ssb_blue">Submit</span> to record your progress and when prompted, choose **Yes**.
@@ -355,7 +345,6 @@ These instructions are specifically for macOS or Linux users. If you are a Windo
 63. To find detailed feedback on your work, choose <span id="ssb_voc_grey">Details</span> followed by <i class="fas fa-caret-right"></i> **View Submission Report**.
 
 
-<br/>
 ## Lab complete <i class="fas fa-graduation-cap"></i>
 
 <i class="fas fa-flag-checkered"></i> Congratulations! You have completed the lab.
